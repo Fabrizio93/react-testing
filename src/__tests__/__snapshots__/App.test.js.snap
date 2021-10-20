@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add todo correctly 1`] = `
+Array [
+  <li
+    class="todo"
+    data-testid="todo"
+  >
+    <div
+      class="stack-small"
+    >
+      <div
+        class="c-cb"
+      >
+        <input
+          data-testid="chbxComplete"
+          id="todo-51b4baeb-d3df-4789-b4c8-6bb050f03680"
+          type="checkbox"
+        />
+        <label
+          class="todo-label"
+          for="todo-51b4baeb-d3df-4789-b4c8-6bb050f03680"
+        >
+          Todo Test
+        </label>
+      </div>
+      <div
+        class="btn-group"
+      >
+        <button
+          class="btn"
+          data-testid="btnEdit"
+          type="button"
+        >
+          Edit 
+          <span
+            class="visually-hidden"
+          >
+            Todo Test
+          </span>
+        </button>
+        <button
+          class="btn btn__danger"
+          data-testid="btnDelete"
+          type="button"
+        >
+          Delete 
+          <span
+            class="visually-hidden"
+          >
+            Todo Test
+          </span>
+        </button>
+      </div>
+    </div>
+  </li>,
+]
+`;

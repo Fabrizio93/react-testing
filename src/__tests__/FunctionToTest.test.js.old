@@ -1,0 +1,5 @@
+import { functionToTest } from '../App';
+
+it('function to test', () => {
+    expect(functionToTest(1,2)).toEqual(3);
+});
