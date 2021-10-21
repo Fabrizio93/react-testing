@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { shallow, configure } from "enzyme";
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
-import Adapter from 'enzyme-adapter-react-16';
 import '@testing-library/jest-dom/extend-expect';
 import App from '../App';
 

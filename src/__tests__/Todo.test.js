@@ -2,7 +2,6 @@ import React from 'react';
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Todo from '../components/Todo';
-import * as $ from 'jquery';
 
 const toggleTaskCompleted = jest.fn();
 const deleteTask = jest.fn();

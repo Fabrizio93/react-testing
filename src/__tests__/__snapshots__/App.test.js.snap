@@ -14,12 +14,12 @@ Array [
       >
         <input
           data-testid="chbxComplete"
-          id="todo-51b4baeb-d3df-4789-b4c8-6bb050f03680"
+          id="todo-370bd964-0a11-44ef-a1d1-bfb127a9dc25"
           type="checkbox"
         />
         <label
           class="todo-label"
-          for="todo-51b4baeb-d3df-4789-b4c8-6bb050f03680"
+          for="todo-370bd964-0a11-44ef-a1d1-bfb127a9dc25"
         >
           Todo Test
         </label>

@@ -3,7 +3,6 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { prettyDOM, queryByLabelText } from '@testing-library/dom';
 import '@testing-library/jest-dom/extend-expect';
 import Form from '../components/Form';
-import * as $ from 'jquery';
 import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 

@@ -3,7 +3,6 @@ import {cleanup, fireEvent, render} from '@testing-library/react';
 import {prettyDOM} from '@testing-library/dom';
 import '@testing-library/jest-dom/extend-expect';
 import FilterButton from '../components/FilterButton';
-import * as $ from 'jquery';
 
 //Load component test
 test('Render filter button component', () => {
