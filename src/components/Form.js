@@ -11,7 +11,6 @@ function Form(props) {
     }
 
     let validName = true;
-    debugger;
     let reAlphanumeric = /^([a-zA-Z0-9 ]+)$/;
     if (!reAlphanumeric.test(name)) {
       validName = false;
@@ -49,9 +48,9 @@ function Form(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} data-cy="addForm">
       <h2 className="label-wrapper">
-        <label htmlFor="new-todo-input" className="label__lg" data-testid="appTitle">
+        <label htmlFor="new-todo-input" className="label__lg" data-testid="appTitle" data-cy="appTitle">
           What needs to be done?
         </label>
       </h2>
@@ -59,6 +58,7 @@ function Form(props) {
       <input
         type="text"
         data-testid="todoName"
+        data-cy="todoName"
         id="new-todo-input"
         className="input input__lg"
         name="text"
@@ -66,7 +66,7 @@ function Form(props) {
         value={name}
         onChange={handleChange}
       />
-      <button type="submit" data-testid="btnAdd" className="btn btn__primary btn__lg">
+      <button data-cy="btnAdd" type="submit" data-testid="btnAdd" className="btn btn__primary btn__lg">
         Add
       </button>
     </form>

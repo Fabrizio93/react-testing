@@ -40,6 +40,7 @@ export default function Todo(props) {
         </label>
         <input
           data-testid="inputEditTodo"
+          data-cy="inputEditTodo"
           id={props.id}
           className="todo-text"
           type="text"
@@ -52,6 +53,7 @@ export default function Todo(props) {
 
         <button
           data-testid="btnCancelEdit"
+          data-cy="btnCancelEdit"
           type="button"
           className="btn todo-cancel"
           onClick={() => setEditing(false)}
@@ -59,7 +61,7 @@ export default function Todo(props) {
           Cancel
           <span className="visually-hidden">renaming {props.name}</span>
         </button>
-        <button type="submit" className="btn btn__primary todo-edit" data-testid="btnSaveEdit">
+        <button type="submit" className="btn btn__primary todo-edit" data-testid="btnSaveEdit" data-cy="btnSaveEdit">
           Save
           <span className="visually-hidden">new name for {props.name}</span>
         </button>
@@ -77,13 +79,14 @@ export default function Todo(props) {
           defaultChecked={props.completed}
           onChange={() => props.toggleTaskCompleted(props.id)}
         />
-        <label className="todo-label" htmlFor={props.id}>
+        <label className="todo-label" htmlFor={props.id} data-cy="labelTodoName">
           {props.name}
         </label>
       </div>
       <div className="btn-group">
         <button
           data-testid="btnEdit"
+          data-cy="btnEdit"
           type="button"
           className="btn"
           onClick={() => setEditing(true)}
@@ -93,6 +96,7 @@ export default function Todo(props) {
         </button>
         <button
           data-testid="btnDelete"
+          data-cy="btnDelete"
           type="button"
           className="btn btn__danger"
           onClick={() => props.deleteTask(props.id)}
@@ -114,5 +118,5 @@ export default function Todo(props) {
   }, [wasEditing, isEditing]);
 
 
-  return <li className="todo" data-testid="todo">{isEditing ? editingTemplate : viewTemplate}</li>;
+  return <li className="todo" data-testid="todo" data-cy="todo">{isEditing ? editingTemplate : viewTemplate}</li>;
 }
