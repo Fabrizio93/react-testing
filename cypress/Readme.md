@@ -49,6 +49,25 @@ We'll create an __App.spec.js__ file. It'll contain our test cases for our proje
         });
     });
 
+As the same as __Jest.js__ in __Cypress__ we can use attributes to identify our elements which we have to interact. __Cypress__ suggest use the __[data-cy]__ attribute. We can fins the element using that attribute below:
+
+- addForm: FORM element for add a new Todo
+- appTitle: LABEL that shows the add todo form title
+- todoName: INPUT type TEXT used to enter the name for a new todo
+- btnAdd: BUTTON that saves a new todo
+- inputEditTodo: INPUT type TEXT used to enter the new name for one todo
+- btnCancelEdit: BUTTON element to cancel a Todo edition
+- btnSaveEdit: BUTTON element to save the changes
+- labelTodoName: LABEL element that displays the name of a Todo
+- btnEdit: BUTTON that open the edit form of every todo item
+- btnDelete: BUTTON that allos user to delete one todo
+- todo: LI element that contains the todo details 
+
+We can use that names to get any element using the __get()__ function, i.e.
+
+    cy.get('[data-cy=myTestingElement]')
+                .someAction('someParameter');
+
 We can find more information about selectors in the [Cypress website](https://docs.cypress.io/api/table-of-contents).
 
 ### 5. Run tests
